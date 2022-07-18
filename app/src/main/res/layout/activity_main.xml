@@ -23,7 +23,7 @@
             android:id="@+id/editn"
             android:layout_width="153dp"
             android:layout_height="67dp"
-            android:layout_marginStart="116dp"
+            android:layout_marginStart="112dp"
             android:layout_marginTop="616dp"
             android:ems="10"
             android:hint="数値を入力"
@@ -33,9 +33,9 @@
 
         <TextView
             android:id="@+id/textboxn"
-            android:layout_width="145dp"
-            android:layout_height="64dp"
-            android:layout_marginStart="116dp"
+            android:layout_width="153dp"
+            android:layout_height="67dp"
+            android:layout_marginStart="112dp"
             android:layout_marginTop="688dp"
             android:inputType="textMultiLine"
             android:lines="1"
@@ -49,7 +49,7 @@
             android:id="@+id/edit16"
             android:layout_width="153dp"
             android:layout_height="67dp"
-            android:layout_marginStart="108dp"
+            android:layout_marginStart="112dp"
             android:layout_marginTop="404dp"
             android:ems="10"
             android:hint="数値を入力"
@@ -74,7 +74,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="404dp"
-            android:layout_marginEnd="36dp"
+            android:layout_marginEnd="44dp"
             android:text="変換"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -93,8 +93,8 @@
 
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="409dp"
-            android:layout_height="70dp"
+            android:layout_width="459dp"
+            android:layout_height="72dp"
             android:background="#0F27C8"
             android:text="進数変換"
             android:textColor="#FFFFFF"
@@ -104,9 +104,9 @@
 
         <TextView
             android:id="@+id/textbox16"
-            android:layout_width="155dp"
-            android:layout_height="66dp"
-            android:layout_marginStart="108dp"
+            android:layout_width="153dp"
+            android:layout_height="67dp"
+            android:layout_marginStart="112dp"
             android:layout_marginTop="468dp"
             android:inputType="textMultiLine"
             android:textColor="#000"
@@ -117,10 +117,10 @@
 
         <TextView
             android:id="@+id/textbox10"
-            android:layout_width="157dp"
-            android:layout_height="61dp"
+            android:layout_width="153dp"
+            android:layout_height="67dp"
             android:layout_marginStart="112dp"
-            android:layout_marginTop="320dp"
+            android:layout_marginTop="326dp"
             android:inputType="textMultiLine"
             android:textColor="#000"
             android:textSize="24sp"
@@ -130,10 +130,10 @@
 
         <TextView
             android:id="@+id/textbox2"
-            android:layout_width="157dp"
-            android:layout_height="61dp"
+            android:layout_width="153dp"
+            android:layout_height="67dp"
             android:layout_marginStart="112dp"
-            android:layout_marginTop="172dp"
+            android:layout_marginTop="178dp"
             android:inputType="textMultiLine"
             android:textColor="#000"
             android:textSize="24sp"
@@ -158,7 +158,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="256dp"
-            android:layout_marginEnd="40dp"
+            android:layout_marginEnd="44dp"
             android:text="変換"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -168,7 +168,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="608dp"
-            android:layout_marginEnd="40dp"
+            android:layout_marginEnd="44dp"
             android:text="変換"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -177,7 +177,7 @@
             android:id="@+id/textView15"
             android:layout_width="55dp"
             android:layout_height="36dp"
-            android:layout_marginStart="12dp"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="552dp"
             android:text="n"
             android:textColor="#000"
@@ -220,10 +220,10 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName3"
-            android:layout_width="79dp"
-            android:layout_height="66dp"
-            android:layout_marginStart="12dp"
+            android:id="@+id/editbase"
+            android:layout_width="60dp"
+            android:layout_height="67dp"
+            android:layout_marginStart="16dp"
             android:layout_marginBottom="96dp"
             android:ems="10"
             android:hint="進数"
