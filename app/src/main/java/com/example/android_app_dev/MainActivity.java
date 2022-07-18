@@ -18,6 +18,11 @@ import com.example.android_app_dev.databinding.ActivityMainBinding;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import amdroid.widget.EditText;
+import android.widget.TextView;
+
+import java.io.*;
+
 public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration appBarConfiguration;
@@ -31,19 +36,19 @@ public class MainActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         //ここから
-        editText = findViewById(R.id.edit2);
-    	editText = findViewById(R.id.edit10);
-    	editText = findViewById(R.id.edit16);
-    	editText = findViewById(R.id.editN);
-    	editText = findViewById(R.id.editBase);
-    	textView = findViewById(R.id.textbox2);
-    	textView = findViewById(R.id.textbox10);
-    	textView = findViewById(R.id.textbox16);
-    	textView = findViewById(R.id.textboxN);
+        editText2 = (EditText)findViewById(R.id.edit2);
+    	editText10 = (EditText)findViewById(R.id.edit10);
+    	editText16 = (EditText)findViewById(R.id.edit16);
+    	editTextN = (EditText)findViewById(R.id.editn);
+    	editTextBase = (TextView)findViewById(R.id.editbase);
+    	textView2 = (TextView)findViewById(R.id.textbox2);
+    	textView10 = (TextView)findViewById(R.id.textbox10);
+    	textView16 = (TextView)findViewById(R.id.textbox16);
+    	textViewN = (TextView)findViewById(R.id.textboxn);
         Button button2 = findViewById(R.id.button2);
     	Button button10 = findViewById(R.id.button10);
     	Button button16 = findViewById(R.id.button16);
-    	Button buttonN = findViewById(R.id.buttonN);
+    	Button buttonN = findViewById(R.id.buttonn);
 
         button2.setOnClickListener(new View.OnClickListener() {
         	@Override
@@ -80,8 +85,8 @@ public class MainActivity extends AppCompatActivity {
     	buttonN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-            	String Base = editBase.getText().toString();
-            	String input = editN.getText().toString();
+            	String Base = editbase.getText().toString();
+            	String input = editn.getText().toString();
             	String input_decimal;
             	BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
             	int n = Integer.parseInt(Base);
@@ -90,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
                 textbox2.setText(test.Binary(input_decimal));
                 textbox10.setText(Integer.toString(A));
                 textbox16.setText(test.Hexadecimal(input_decimal));
-                textboxN.setText(input);
+                textboxn.setText(input);
             }
         });
         //ここまで入力
