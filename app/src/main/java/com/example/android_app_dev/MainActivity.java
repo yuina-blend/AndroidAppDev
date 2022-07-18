@@ -30,11 +30,21 @@ public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration appBarConfiguration;
     private ActivityMainBinding binding;
-    private basechange;
-    private EditText;
-    private TextView;
-    private Button;
-
+    private basechange test;
+    private EditText editText2;
+    private EditText editText10;
+    private EditText editText16;
+    private EditText editTextN;
+    private EditText editTextBase;
+    private TextView textView2;
+    private TextView textView10;
+    private TextView textView16;
+    private TextView textViewN;
+    private Button button2;
+    private Button button10;
+    private Button button16;
+    private Button buttonN;
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
