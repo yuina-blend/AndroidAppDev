@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration appBarConfiguration;
     private ActivityMainBinding binding;
-    private basechange test = Newbasechange();
+    private basechange test = New basechange();
     private EditText editText2 = (EditText)findViewById(R.id.edit2);
     private EditText editText10 = (EditText)findViewById(R.id.edit10);
     private EditText editText16 = (EditText)findViewById(R.id.edit16);
@@ -87,8 +87,8 @@ public class MainActivity extends AppCompatActivity {
     	buttonN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-            	String Base = editTextbase.getText().toString();
-            	String input = editTextn.getText().toString();
+            	String Base = editTextBase.getText().toString();
+            	String input = editTextN.getText().toString();
             	String input_decimal;
             	BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
             	int n = Integer.parseInt(Base);
@@ -97,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
           		textView2.setText(test.Binary(input_decimal));
           		textView10.setText(Integer.toString(A));
           		textView16.setText(test.Hexadecimal(input_decimal));
-          		textViewn.setText(input);
+          		textViewN.setText(input);
             }
         });
         //ここまで入力
