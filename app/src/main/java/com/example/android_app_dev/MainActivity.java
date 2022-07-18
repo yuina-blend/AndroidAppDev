@@ -22,6 +22,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Button;
 
+import basechange;
+
 import java.io.*;
 
 public class MainActivity extends AppCompatActivity {
@@ -53,48 +55,48 @@ public class MainActivity extends AppCompatActivity {
         button2.setOnClickListener(new View.OnClickListener() {
         	@Override
         	public void onClick(View v) {
-                String input = edit2.getText().toString();
+                String input = editText2.getText().toString();
                 String input_decimal;
                 input_decimal = test.B_to_D(input);
-                textbox2.setText(input);
-                textbox10.setText(test.B_to_D(input));
-                textbox16.setText(test.Hexadecimal(input_decimal));
+                textView2.setText(input);
+                textView10.setText(test.B_to_D(input));
+                textView16.setText(test.Hexadecimal(input_decimal));
         	}
         });
     	button10.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-            	String input = edit10.getText().toString();
-                textbox2.setText(test.Binary(input));
-                textbox10.setText(input);
-                textbox16.setText(test.Hexadecimal(input);
+            	String input = editText10.getText().toString();
+            	textView2.setText(test.Binary(input));
+            	textView10.setText(input);
+            	textView16.setText(test.Hexadecimal(input));
             }
         });
     	button16.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-            	String input = edit16.getText().toString();
+            	String input = editText16.getText().toString();
             	String input_decimal;
             	input_decimal = test.H_to_D(input);
-                textbox2.setText(test.Binary(input_decimal));
-                textbox10.setText(test.H_to_D(input));
-                textbox16.setText(input);
+            	textView2.setText(test.Binary(input_decimal));
+            	textView10.setText(test.H_to_D(input));
+            	textView16.setText(input);
             }
         });
     	buttonN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-            	String Base = editbase.getText().toString();
-            	String input = editn.getText().toString();
+            	String Base = editTextbase.getText().toString();
+            	String input = editTextn.getText().toString();
             	String input_decimal;
             	BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
             	int n = Integer.parseInt(Base);
             	int A = Integer.parseInt(input, n);
           		input_decimal = Integer.toString(A);
-                textbox2.setText(test.Binary(input_decimal));
-                textbox10.setText(Integer.toString(A));
-                textbox16.setText(test.Hexadecimal(input_decimal));
-                textboxn.setText(input);
+          		textView2.setText(test.Binary(input_decimal));
+          		textView10.setText(Integer.toString(A));
+          		textView16.setText(test.Hexadecimal(input_decimal));
+          		textViewn.setText(input);
             }
         });
         //ここまで入力

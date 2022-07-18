@@ -1,4 +1,6 @@
-public class 進数変換{
+package com.example.android_app_dev;
+
+public class basechange{
 public String Binary(String input){
 return Integer.toBinaryString (Integer.parseInt(input));
 }
