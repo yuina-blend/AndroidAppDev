@@ -1,6 +1,6 @@
 import java.io.*;
 
-public class Hello {
+public class ConvertNtoDecimal {
     public String convert(String X, String N) {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(N);
