@@ -9,10 +9,87 @@
     tools:context=".MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/text2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#00EFEFEF"
-        android:backgroundTint="#00FFFFFF">
+        android:backgroundTint="#00FFFFFF"
+        app:layout_anchor="@+id/text2"
+        app:layout_anchorGravity="center"
+        tools:layout_editor_absoluteX="12dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <EditText
+            android:id="@+id/editn"
+            android:layout_width="153dp"
+            android:layout_height="67dp"
+            android:layout_marginStart="116dp"
+            android:layout_marginTop="616dp"
+            android:ems="10"
+            android:hint="数値を入力"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textboxn"
+            android:layout_width="145dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="116dp"
+            android:layout_marginTop="688dp"
+            android:inputType="textMultiLine"
+            android:lines="1"
+            android:textColor="#000"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <EditText
+            android:id="@+id/edit16"
+            android:layout_width="153dp"
+            android:layout_height="67dp"
+            android:layout_marginStart="108dp"
+            android:layout_marginTop="404dp"
+            android:ems="10"
+            android:hint="数値を入力"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="55dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="404dp"
+            android:text="16"
+            android:textColor="#000"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="404dp"
+            android:layout_marginEnd="36dp"
+            android:text="変換"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edit10"
+            android:layout_width="153dp"
+            android:layout_height="67dp"
+            android:layout_marginStart="112dp"
+            android:layout_marginTop="256dp"
+            android:ems="10"
+            android:hint="数値を入力"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView2"
@@ -26,88 +103,85 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView15"
-            android:layout_width="55dp"
-            android:layout_height="36dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="488dp"
-            android:text="n"
+            android:id="@+id/textbox16"
+            android:layout_width="155dp"
+            android:layout_height="66dp"
+            android:layout_marginStart="108dp"
+            android:layout_marginTop="468dp"
+            android:inputType="textMultiLine"
             android:textColor="#000"
             android:textSize="24sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <TextView
-            android:id="@+id/textView13"
-            android:layout_width="55dp"
-            android:layout_height="36dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="304dp"
-            android:text="16"
+            android:id="@+id/textbox10"
+            android:layout_width="157dp"
+            android:layout_height="61dp"
+            android:layout_marginStart="112dp"
+            android:layout_marginTop="320dp"
+            android:inputType="textMultiLine"
             android:textColor="#000"
             android:textSize="24sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/textbox2"
+            android:layout_width="157dp"
+            android:layout_height="61dp"
+            android:layout_marginStart="112dp"
+            android:layout_marginTop="172dp"
+            android:inputType="textMultiLine"
+            android:textColor="#000"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <TextView
             android:id="@+id/textView12"
             android:layout_width="55dp"
             android:layout_height="36dp"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="208dp"
+            android:layout_marginTop="256dp"
             android:text="10"
             android:textColor="#000"
             android:textSize="24sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/text10"
-            android:layout_width="157dp"
-            android:layout_height="61dp"
-            android:layout_marginStart="112dp"
-            android:layout_marginTop="208dp"
-            android:inputType="textMultiLine"
-            android:text="数値を入力"
-            android:textColor="#000"
-            android:textSize="24sp"
-            app:layout_constraintStart_toStartOf="parent"
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="256dp"
+            android:layout_marginEnd="40dp"
+            android:text="変換"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/buttonn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="608dp"
+            android:layout_marginEnd="40dp"
+            android:text="変換"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/text16"
-            android:layout_width="155dp"
-            android:layout_height="66dp"
-            android:layout_marginStart="112dp"
-            android:layout_marginTop="304dp"
-            android:inputType="textMultiLine"
-            android:text="数値を入力"
-            android:textColor="#000"
-            android:textSize="24sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/textn"
-            android:layout_width="145dp"
-            android:layout_height="64dp"
-            android:layout_marginStart="112dp"
-            android:layout_marginTop="544dp"
-            android:inputType="textMultiLine"
-            android:lines="1"
-            android:text="数値を入力"
-            android:textColor="#000"
-            android:textSize="24sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/textView"
+            android:id="@+id/textView15"
             android:layout_width="55dp"
             android:layout_height="36dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="108dp"
-            android:text="2"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="552dp"
+            android:text="n"
+            android:textColor="#000"
+            android:textSize="24sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -123,70 +197,40 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/text2"
-            android:layout_width="156dp"
-            android:layout_height="67dp"
-            android:layout_marginStart="112dp"
-            android:layout_marginTop="108dp"
-            android:inputType="textMultiLine"
-            android:text="数値を入力"
-            android:textColor="#000"
-            android:textSize="24sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/basen"
-            android:layout_width="52dp"
-            android:layout_height="38dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="544dp"
-            android:text="進数"
-            android:textColor="#000"
-            android:textSize="24sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
         <Button
             android:id="@+id/button2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="108dp"
-            android:layout_marginEnd="40dp"
+            android:layout_marginEnd="44dp"
             android:text="変換"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:id="@+id/button16"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="304dp"
-            android:layout_marginEnd="40dp"
-            android:text="変換"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <Button
-            android:id="@+id/buttonn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="544dp"
-            android:layout_marginEnd="40dp"
-            android:text="変換"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <Button
-            android:id="@+id/button10"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="284dp"
-            android:layout_marginTop="208dp"
-            android:text="変換"
+        <EditText
+            android:id="@+id/edit2"
+            android:layout_width="153dp"
+            android:layout_height="67dp"
+            android:layout_marginStart="112dp"
+            android:layout_marginTop="108dp"
+            android:ems="10"
+            android:hint="数値を入力"
+            android:inputType="textPersonName"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName3"
+            android:layout_width="79dp"
+            android:layout_height="66dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginBottom="96dp"
+            android:ems="10"
+            android:hint="進数"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
