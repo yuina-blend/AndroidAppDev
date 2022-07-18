@@ -30,7 +30,44 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+      //ここから
+        final TextView text2 = (TextView)findViewById(R.id.text2);
+        final TextView text10 = (TextView)findViewById(R.id.text10);
+        final TextView text16 = (TextView)findViewById(R.id.text16);
+        Button button2 = (Button)findViewById(R.id.button2);
+        Button button10 = (Button)findViewById(R.id.button10);
+        Button button16 = (Button)findViewById(R.id.button16);
 
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+            	String input = getString(R.string.text2);
+            	String input_decimal;
+            	input_decimal = test.B_to_D(input);
+                text10.setText(test.B_to_D(input));
+                text16.setText(test.Hexadecimal(input_decimal));
+            }
+        });
+        button10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+            	String input = getString(R.string.text10);
+            	String input_decimal;
+                text2.setText(test.Binary(input));
+                text16.setText(test.Hexadecimal(input_decimal));
+            }
+        });
+        button16.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+            	String input = getString(R.string.text16);
+            	String input_decimal;
+            	input_decimal = test.H_to_D(input);
+                text2.setText(test.Binary(input_decimal));
+                text10.setText(test.H_to_D(input));
+            }
+        });
+        //ここまで入力
 
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
