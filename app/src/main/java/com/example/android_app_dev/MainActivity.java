@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration appBarConfiguration;
     private ActivityMainBinding binding;
-    private basechange test = New basechange();
+    private basechange test = new basechange();
     private EditText editText2 = (EditText)findViewById(R.id.edit2);
     private EditText editText10 = (EditText)findViewById(R.id.edit10);
     private EditText editText16 = (EditText)findViewById(R.id.edit16);
