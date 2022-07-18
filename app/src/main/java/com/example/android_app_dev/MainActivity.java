@@ -30,20 +30,11 @@ public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration appBarConfiguration;
     private ActivityMainBinding binding;
-    private basechange test = new basechange();
-    private EditText editText2 = (EditText)findViewById(R.id.edit2);
-    private EditText editText10 = (EditText)findViewById(R.id.edit10);
-    private EditText editText16 = (EditText)findViewById(R.id.edit16);
-    private EditText editTextN = (EditText)findViewById(R.id.editn);
-    private EditText editTextBase = (EditText)findViewById(R.id.editbase);
-    private TextView textView2 = (TextView)findViewById(R.id.textbox2);
-    private TextView textView10 = (TextView)findViewById(R.id.textbox10);
-    private TextView textView16 = (TextView)findViewById(R.id.textbox16);
-    private TextView textViewN = (TextView)findViewById(R.id.textboxn);
-    private Button button2 = findViewById(R.id.button2);
-    private Button button10 = findViewById(R.id.button10);
-    private Button button16 = findViewById(R.id.button16);
-    private Button buttonN = findViewById(R.id.buttonn);
+    private basechange;
+    private EditText;
+    private TextView;
+    private Button;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,8 +42,22 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        //ここから
+        test = new basechange();
+        editText2 = (EditText)findViewById(R.id.edit2);
+        editText10 = (EditText)findViewById(R.id.edit10);
+        editText16 = (EditText)findViewById(R.id.edit16);
+        editTextN = (EditText)findViewById(R.id.editn);
+        editTextBase = (EditText)findViewById(R.id.editbase);
+        textView2 = (TextView)findViewById(R.id.textbox2);
+        textView10 = (TextView)findViewById(R.id.textbox10);
+        textView16 = (TextView)findViewById(R.id.textbox16);
+        textViewN = (TextView)findViewById(R.id.textboxn);
+        button2 = findViewById(R.id.button2);
+        button10 = findViewById(R.id.button10);
+        button16 = findViewById(R.id.button16);
+        buttonN = findViewById(R.id.buttonn);
 
+        
         button2.setOnClickListener(new View.OnClickListener() {
         	@Override
         	public void onClick(View v) {
